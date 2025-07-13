@@ -25,9 +25,9 @@ manifest_out['version'] = version
 # Development build? If so, modify name accordingly.
 match = re.search(r'^\d+\.\d+\.\d+\.\d+$', version)
 if match:
-    manifest_out['name'] = 'ubo development build'
-    manifest_out['short_name']  = 'ubo dev build'
-    manifest_out['browser_action']['default_title'] = ' ubo dev build'
+    manifest_out['name'] = 'asdf development build'
+    manifest_out['short_name']  = 'asdf dev build'
+    manifest_out['browser_action']['default_title'] = 'asdf dev build'
 
 with open(manifest_out_file, 'w') as f:
     json.dump(manifest_out, f, indent=2, separators=(',', ': '), sort_keys=True)
